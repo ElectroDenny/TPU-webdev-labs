@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета web-разработчика</title>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <td>Регистрационное имя</td>
+            <td>
+                <form action="server" method="post">
+                    <input type="text" name="name">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Ваша дата рождения</td>
+            <td>
+                <input type="date" value="birthday">
+            </td>
+        </tr>
+        <tr>
+            <td>Пароль</td>
+            <td>
+                <form action="server" method="post">
+                    <input type="password" name="password"> <br> <input type="password" name="password"> :
+                    подтвердите пароль
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Ваша специализация</td>
+            <td>
+                <form action="server" method="post">
+                    <select name="specialization">
+                        <option value="Backend-разработчик">Backend-разработчик</option>
+                        <option value="Frontend-разработчик">Frontend-разработчик</option>
+                        <option value="Fullstack-разработчик">Fullstack-разработчик</option>
+                    </select>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Пол</td>
+            <td>
+                <form action="server" method="post">
+                    <input type="radio" name="sex" value="man">М <input type="radio" name="sex" value="woman">Ж
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Ваши навыки</td>
+            <td>
+                <input type="checkbox" name="Lang" value="HTML&CSS">знание HTML и CSS <br>
+                <input type="checkbox" name="Lang" value="Perl">знание Perl<br>
+                <input type="checkbox" name="Lang" value="ASP">знание ASP<br>
+                <input type="checkbox" name="Lang" value="Adobe Photoshop">знание Adobe Photoshop<br>
+                <input type="checkbox" name="Lang" value="Java">знание Java<br>
+                <input type="checkbox" name="Lang" value="JavaScript">знание JavaScript<br>
+                <input type="checkbox" name="Lang" value="Flash">знание Flash<br>
+            </td>
+        </tr>
+        <tr>
+            <td>Дополнительные сведения о себе</td>
+            <td>
+                <form action="server" method="post">
+                    <textarea name="additional info" cols="30" rows="10"></textarea>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="Зарегистрировать">
+    <input type="submit" value="Очистить форму">
+</body>
+
+</html>
