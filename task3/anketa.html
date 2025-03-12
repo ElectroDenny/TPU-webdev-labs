@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета Конкурса</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .lang-section {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>АНКЕТА</h1>
+        <h2>участника конкурса на замещение вакантной должности</h2>
+
+        <label for="фамилия">Фамилия:</label>
+        <input type="text" id="фамилия" placeholder="Введите фамилию">
+
+        <label for="имя">Имя:</label>
+        <input type="text" id="имя" placeholder="Введите имя">
+
+        <label for="отчество">Отчество:</label>
+        <input type="text" id="отчество" placeholder="Введите отчество">
+
+        <label for="дата_рождения">Дата рождения:</label>
+        <input type="number" id="год" min="1975" max="2004" placeholder="Год">
+        <select id="месяц" placeholder="Месяц">
+            <option value="январь">Январь</option>
+            <option value="февраль">Февраль</option>
+            <option value="март">Март</option>
+            <option value="апрель">Апрель</option>
+            <option value="май">Май</option>
+            <option value="июнь">Июнь</option>
+            <option value="июль">Июль</option>
+            <option value="август">Август</option>
+            <option value="сентябрь">Сентябрь</option>
+            <option value="октябрь">Октябрь</option>
+            <option value="ноябрь">Ноябрь</option>
+            <option value="декабрь">Декабрь</option>
+        </select> 
+        <input type="number" id="число" min="1" max="31" placeholder="Число">
+
+        <label for="образование">Образование:</label>
+        <select id="образование">
+            <option value="высшее" selected>Высшее</option>
+            <option value="среднее">Среднее</option>
+            <option value="среднее_специальное">Среднее специальное</option>
+            </select>
+
+        <label for="опыт_работы">Время работы по специальности:</label>
+        <input type="number" id="опыт_работы" placeholder="Укажите количество лет">
+
+        <div class="lang-section">
+            <h3>Владение следующими иностранными языками:</h3>
+            <label><input type="checkbox"> Английский: <select>
+                <option value="свободно">Свободно</option>
+                <option value="со_словарём">Читаю со словарем</option>
+                <option value="базовый">Базовый</option></select></label>
+            <label><input type="checkbox"> Французский: <select>
+                <option value="свободно">Свободно</option>
+                <option value="со_словарём">Читаю со словарем</option>
+                <option value="базовый">Базовый</option></select></label>
+            <label><input type="checkbox"> Испанский: <select>
+                <option value="свободно">Свободно</option>
+                <option value="со_словарём">Читаю со словарем</option>
+                <option value="базовый">Базовый</option></select></label>
+            <label><input type="checkbox"> Японский: <select>
+                <option value="свободно">Свободно</option>
+                <option value="со_словарём">Читаю со словарем</option>
+                <option value="базовый">Базовый</option></select></label>
+            <label><input type="checkbox"> Другой (укажите, какой): <input type="text"></label>
+        </div>
+    </div>
+</body>
+</html>
