@@ -1,2 +1,3 @@
 # TPU-webdev-labs
-Repository containing lab assignments for a basic web development course.
+
+Данный репозиторий содержит работы курса "Основы Web-разработки". В нем представлены работы по изучению HTML и СSS.
